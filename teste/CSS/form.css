@@ -1,0 +1,57 @@
+.container {
+    height: 200px;
+    padding: 40px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: #c3e96c;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.container h1 {
+    color: #000000;
+    letter-spacing: 10px;
+}
+
+.container input {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 7px 9px;
+    width: 220px;
+    outline: none;
+    color: #000000;
+    border-radius: 25px;
+    transition: 0.30s;
+}
+
+.container .input:focus {
+    width: 260px;
+    border-color: #ffffff;
+}
+
+.botao {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #fa0000;
+    padding: 8px 2px;
+    width: 220px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 25px;
+    transition: 0.30s;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #ff0000;
+}
+

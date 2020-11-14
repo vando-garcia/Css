@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6c97a8,
+     #ffffff);
+}
+
+.tabela-precos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+    margin-top: 500px;
+}
+
+.card {
+    padding: 30px 40px 0px 40px;
+    background-color:#c3e96c;
+    margin-right: 30px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    transition: 0.5s;
+    color: #000000;
+}
+.card:hover {
+    width: 250px;
+    height: 230px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.card-preco {
+    padding-bottom: 3px;
+    color: #000000;
+}
+
+.preco {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.card ul {
+    color: #000000;
+    list-style: none;
+    padding-bottom: 35px;
+}
+
+.car ul li {    
+    padding-bottom: 10px;
+}
