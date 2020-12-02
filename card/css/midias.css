@@ -1,0 +1,96 @@
+
+
+
+.main {
+   
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 350px 50px;
+}
+
+#checkbox {
+   
+    cursor: pointer;
+    -webkit-appearance: none;
+    outline: none;
+    background: white;
+    position: relative;
+}
+
+#checkbox:hover {
+    background: #ffffffbe;
+}
+
+#checkbox::before {
+    content: '\f1e0';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'font awesome 5 free';
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #292929;
+    transition: all 2s;
+
+}
+
+#checkbox:checked::before {
+    content: '\f00d';
+}
+
+#checkbox:checked ~ .menus {
+    width: 260px;
+}
+
+.menus {
+    width: 0;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.menus .menuItens {
+   
+    background: white;
+    position: relative;
+    border-left: 1px solid #a5a5a5;
+}
+
+.menus .menuItens:hover {
+    background: #ffffffbe;
+}
+
+.menus .menuItens i {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-whatsapp{
+    color: #25d366;
+}
+
+.fa-instagram {
+    color: #c32aa3;
+
+}
+
+.fa-facebook-f {
+    color: #1877f2;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.menus a {
+    color: #222222;
+}
