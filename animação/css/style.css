@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    color: #ffffff;
+    z-index: 0;
+    border: 1px solid #ff0000;
+    background: #554040;
+    overflow: hidden;
+}
+
+.btn:hover::before {
+    top: 0px;
+    border-radius: 0;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    border-radius: 50% 50% 0% 0;
+    z-index: -1;
+    transition: all 0.6s;
+}
